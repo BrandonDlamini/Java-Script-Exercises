@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript current day and time</title>
+  </head>
+  <body>
+<script type="text/javascript">
+
+   const today = new Date();
+   const month = today.getMonth();
+   const day = today.getDay();
+   const hours = today.getHours();
+   const minutes = today.getMinutes();
+   const seconds = today.getSeconds();
+   let timeOfDay;
+   let dayOfWeek;
+
+   if(hours >= 12){
+     timeOfDay = 'PM';
+   }
+
+   else if (hours < 12 ) {
+     timeOfDay = 'AM';
+   }
+
+   if (day == 0)
+   {
+     dayOfWeek = 'Sunday'
+   }
+   if (day == 1)
+   {
+     dayOfWeek = 'Monday'
+   }
+   if (day == 2)
+   {
+     dayOfWeek = 'Tuesday'
+   }
+   if (day == 3)
+   {
+     dayOfWeek = 'Wednedday'
+   }
+   if (day == 4)
+   {
+     dayOfWeek = 'Thursday'
+   }
+   if (day == 5)
+   {
+     dayOfWeek = 'Friday'
+   }
+   if (day == 6)
+   {
+      dayOfWeek = 'Saturday'
+    }
+  const response = `Today is: ${dayOfWeek}. Current time is ${hours} ${timeOfDay} : ${minutes} : ${seconds}`
+  console.log(response);
+
+
+</script>
+
+  </body>
+</html>
