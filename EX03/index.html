@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+// programm to get today date
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      const todayDate = new Date();
+      const month = todayDate.getMonth();
+      const day = todayDate.getDate();
+      const year = todayDate.getFullYear();
+
+      console.log(`${day}/${month+1}/${year}`);
+
+      if (day < 10){
+        console.log(`0${day}/${month+1}/${year}`);
+      }
+
+      if (month < 10){
+        console.log(`${day}/0${month+1}/${year}`);
+      }
+
+      else if (month < 10 && day < 10) {
+        console.log(`0${day}/0${month+1}/${year}`);
+      }
+
+
+    </script>
+  </body>
+</html>
