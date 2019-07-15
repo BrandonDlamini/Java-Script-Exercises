@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // A Programm that takes in a string and revereses it
+      var wordToBeReversed = "w3resource";
+
+      const reverseString = (str) => {
+
+        var splitString = str.split("");
+        var reverseArray = splitString.reverse();
+        var joinArray = reverseArray.join("");
+        return joinArray;
+
+      }
+
+      console.log(reverseString(wordToBeReversed));
+
+
+    </script>
+
+  </body>
+</html>
